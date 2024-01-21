@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update/{{hero.id}}"  method="post">
+        <input type="hidden" name="id" value="{{hero.id}}">
+        <label for="first name">first name</label>
+        <input type="text" name="first_name" placeholder="First" value="{{hero.first_name}}">
+        <label for="last_name">last name</label>
+        <input type="text" name="last_name"placeholder='Last' value="{{hero.last_name}}">
+        <label for="alias">alias</label>
+        <input type="text" name="alias"placeholder = 'alias' value="{{hero.alias}}">
+        <label for="origin">origin</label>
+        <input type="text" name="origin" value="{{hero.origin}}">
+        <input type="submit">
+
+</body>
+</html>
